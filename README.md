@@ -1,6 +1,6 @@
 # Rick and Morty App
 
-Aplicación de ejemplo creada mientras escirbía este post: 
+Aplicación de ejemplo creada mientras escribía este post: 
 
 ## [Desarrollo rápido en Flutter con GetX](https://correaleyval.github.io/blog/2020/03/07/desarrollo-rápido-en-flutter-con-getx/)
 
