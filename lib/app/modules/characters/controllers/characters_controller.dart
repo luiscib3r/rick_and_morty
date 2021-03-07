@@ -9,11 +9,6 @@ class CharactersController extends GetxController {
   final _characters = <Character>[].obs;
   List<Character> get characters => _characters.toList();
 
-  final _lastPage = false.obs;
-
-  List<Character> get character => _characters.toList();
-  bool get lastPage => _lastPage.value;
-
   final CharacterProvider characterProvider;
 
   CharactersController(this.characterProvider);
