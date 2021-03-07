@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import 'package:rick_and_morty/app/modules/characters/bindings/characters_binding.dart';
+import 'package:rick_and_morty/app/modules/characters/views/character_details_view.dart';
 import 'package:rick_and_morty/app/modules/characters/views/characters_view.dart';
 import 'package:rick_and_morty/app/modules/episodes/bindings/episodes_binding.dart';
 import 'package:rick_and_morty/app/modules/episodes/views/episodes_view.dart';
@@ -24,6 +25,10 @@ class AppPages {
       name: _Paths.CHARACTERS,
       page: () => CharactersView(),
       binding: CharactersBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHARACTERS_DETAILS,
+      page: () => CharacterDetailsView(),
     ),
     GetPage(
       name: _Paths.LOCATIONS,

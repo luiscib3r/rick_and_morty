@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:lazy_load_scrollview/lazy_load_scrollview.dart';
+import 'package:rick_and_morty/app/routes/app_pages.dart';
 
 import '../controllers/characters_controller.dart';
 
@@ -27,7 +28,10 @@ class CharactersView extends GetView<CharactersController> {
 
               return GestureDetector(
                 behavior: HitTestBehavior.translucent,
-                onTap: () {},
+                onTap: () => Get.toNamed(
+                  Routes.CHARACTER_DETAILS,
+                  arguments: _character,
+                ),
                 child: Container(
                   margin: EdgeInsets.fromLTRB(16, 16, 24, 0),
                   child: Column(
